@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+.map-area {
+  /* 根据你的实际高度需要调整 */
+  height: 100%;
+}
+
+.info-bar {
+  position: relative; /* 用于拖动条 */
+  background-color: #fff;
+  height: 35%; /* 调整以适应内容 */
+  border-radius: 16px;
+}
+
+.widgets {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget {
+  margin: 20px;
+  /* 其他样式 */
+}
+
+/* 底部导航栏样式 */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-link.active i,
+.nav-link.active span {
+  color: #007AFF;
+}
+
+.bi {
+  margin-bottom: 4px;
+}
+
+
+.drag-handle {
+  cursor: ns-resize; /* 表示垂直方向的拖动 */
+  padding: 8px; /* 添加一些内边距 */
+  text-align: center; /* 使横线居中 */
+}
+
+.handle-line {
+  width: 25px; /* 横线的宽度 */
+  height: 2px; /* 横线的高度 */
+  background-color: #ccc; /* 横线的颜色 */
+  margin: 3px auto; /* 横线居中并添加一些垂直间距 */
+  border-radius: 5px; /* 圆角效果 */
+}
+
+
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10%;
+}
+
+.dialog-close {
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 80%;
+  color: #007AFF;
+}
+
+.QRcode {
+  width: 80%;
+}

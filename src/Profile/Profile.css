@@ -1,0 +1,80 @@
+.user-profile {
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  max-width: 400px; /* 假设最大宽度为400px */
+  margin: auto;
+}
+
+.user-widget {
+  background-color: #1b89ff; /* 蓝色背景 */
+  color: white;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.avatar-container {
+  flex-shrink: 0; /* 防止头像缩小 */
+}
+
+.user-avatar {
+  width: 60px; /* 假设头像大小为50px */
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px; /* 头像和文字之间的间距 */
+  margin-top: 10%;
+}
+
+.user-info {
+  flex-grow: 1; /* 占据剩余空间 */
+}
+
+.user-name {
+  margin-top: 10%;
+}
+.user-id {
+  margin: 0;
+  font-size: 18px;
+}
+
+.user-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-button {
+  background-color: #f8f9fa; /* 浅灰色背景 */
+  border: none;
+  text-align: left; /* 文字左对齐 */
+  padding: 15px 20px; /* 假设按钮内边距为15px上下，20px左右 */
+  font-size: 16px; /* 文字大小 */
+  color: #495057; /* 按钮文字颜色 */
+  border-bottom: 1px solid #e9ecef; /* 底部边框线 */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-button:last-child {
+  border-bottom: none;
+}
+
+.action-button:hover {
+  background-color: #e2e6ea; /* 鼠标悬停时的背景色 */
+}
+
+.accordion-body {
+  text-align: left;
+}
+
+.input-group {
+  margin: 10px;
+  min-height: 100px;
+  max-width: 370px;
+}
+
+.text-end mt-2 {
+  margin-right: 10px;
+  position: relative;
+  right: -20px;
+
+}
